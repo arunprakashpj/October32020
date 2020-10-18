@@ -1,6 +1,6 @@
 # submenu
 submenu () {
-  local PS3='Please enter sub option: '
+  local PS3='Please enter your choice '
   local options=("Create" "Delete" "Back")
   local opt
   select opt in "${options[@]}"
@@ -22,17 +22,17 @@ submenu () {
 }
 
 # main menu
-PS3='Please choose your target repo: '
-options=("Github" "GitLab" "Other")
+PS3='Please choose your target VCR: '
+options=("Github VCR " "GitLab VCR" "Other")
 select opt in "${options[@]}"
 do
     case $opt in
         "Github")
-            echo "You have selected Github"
+            echo "You have selected Github VCR"
             submenu
             ;;
         "GitLab")
-            echo "You have selected Gitlab"
+            echo "You have selected Gitlab VCR"
             submenu
             ;;
         "Other")
