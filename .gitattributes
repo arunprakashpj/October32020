@@ -1,1 +1,1 @@
-securefile1.txt filter=git-crypt diff=git-crypt
+newsecret.txt filter=git-crypt diff=git-crypt
